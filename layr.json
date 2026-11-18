@@ -1,28 +1,67 @@
 {
   "id": "research-desk",
   "name": "Research desk",
-  "version": "0.1.0",
-  "description": "A desk for lab work: analyses big in the middle, notes and the web on the side.",
+  "version": "0.2.0",
+  "description": "A desk for lab work: experiments and their explained methods big in the middle, quick charts, notes and the web on the side.",
   "author": "layr",
   "layr": "^0.1",
   "icon": "biotech",
   "kind": "app",
-  "dependencies": { "research": "^0.1", "notes": "^0.1", "browser": "^0.1" },
+  "dependencies": {
+    "research": "^0.2",
+    "notes": "^0.1",
+    "browser": "^0.1"
+  },
   "layout": {
     "v": 1,
     "root": {
       "type": "split",
       "dir": "row",
-      "sizes": [0.66, 0.34],
+      "sizes": [
+        0.66,
+        0.34
+      ],
       "children": [
-        { "type": "tabs", "tabs": [{ "plugin": "research", "panel": "main" }] },
+        {
+          "type": "tabs",
+          "tabs": [
+            {
+              "plugin": "research",
+              "panel": "experiments"
+            },
+            {
+              "plugin": "research",
+              "panel": "main"
+            }
+          ]
+        },
         {
           "type": "split",
           "dir": "column",
-          "sizes": [0.6, 0.4],
+          "sizes": [
+            0.6,
+            0.4
+          ],
           "children": [
-            { "type": "tabs", "tabs": [{ "plugin": "notes", "panel": "main", "title": "Lab notes" }] },
-            { "type": "tabs", "tabs": [{ "plugin": "browser", "panel": "start" }] }
+            {
+              "type": "tabs",
+              "tabs": [
+                {
+                  "plugin": "notes",
+                  "panel": "main",
+                  "title": "Lab notes"
+                }
+              ]
+            },
+            {
+              "type": "tabs",
+              "tabs": [
+                {
+                  "plugin": "browser",
+                  "panel": "start"
+                }
+              ]
+            }
           ]
         }
       ]
