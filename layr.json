@@ -2,7 +2,7 @@
   "repository": "https://github.com/mrknrb/layr-research-desk",
   "id": "research-desk",
   "name": "Research desk",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A pack for lab work: experiments and their explained methods big in the middle, quick charts, notes and the web on the side, and a desk for writing up.",
   "author": "layr",
   "layr": "^0.1",
